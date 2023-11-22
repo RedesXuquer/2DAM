@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejerciciossql.FXMLDocumentController">
+    <children>
+        <Button fx:id="buttonActualizar" layoutX="256.0" layoutY="396.0" onAction="#handleButtonActionActualizar" text="Introducir" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextArea fx:id="areaOutput" layoutX="26.0" layoutY="20.0" prefHeight="307.0" prefWidth="759.0" />
+      <TextField fx:id="fieldId" layoutX="26.0" layoutY="341.0" />
+      <TextField fx:id="fieldName" layoutX="26.0" layoutY="379.0" />
+      <TextField fx:id="fieldCC" layoutX="26.0" layoutY="413.0" />
+      <TextField fx:id="fieldDistrict" layoutX="26.0" layoutY="448.0" />
+      <TextField fx:id="fieldPopulation" layoutX="26.0" layoutY="480.0" />
+      <Button fx:id="buttonEliminar" layoutX="261.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleButtonActionBorrar" text="Eliminar" />
+      <TextField fx:id="fieldPathCSV" layoutX="550.0" layoutY="341.0" prefHeight="25.0" prefWidth="235.0" text="Dades.csv" />
+      <Button fx:id="buttonCSVtoSQL" layoutX="600.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleButtonActionCSVtoSQL" text="Pasar de CSV a MySQL" />
+    </children>
+</AnchorPane>

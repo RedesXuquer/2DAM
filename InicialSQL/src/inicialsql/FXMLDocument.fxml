@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="inicialsql.FXMLDocumentController">
+    <children>
+        <Button fx:id="buttonRead" layoutX="91.0" layoutY="551.0" onAction="#handleButtonActionRead" text="Read" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextArea fx:id="areaResult" layoutX="26.0" layoutY="37.0" prefHeight="350.0" prefWidth="750.0" />
+      <TextArea fx:id="areaInput" layoutX="26.0" layoutY="398.0" prefHeight="145.0" prefWidth="750.0" />
+      <Button fx:id="buttonUpdate" layoutX="151.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleButtonActionUpdate" text="Update" />
+      <Button fx:id="buttonCreate" layoutX="26.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleButtonActionCreate" text="Create" />
+      <Button fx:id="buttonDelete" layoutX="218.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleButtonActionDelete" text="Delete" />
+      <Button fx:id="buttonCreateS" layoutX="401.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleButtonActionCreateS" text="Create Statement" />
+    </children>
+</AnchorPane>
