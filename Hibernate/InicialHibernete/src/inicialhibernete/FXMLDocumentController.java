@@ -16,7 +16,6 @@ import org.hibernate.cfg.Configuration;
 import java.util.List;
 import org.hibernate.Transaction;
 
-
 /**
  *
  * @author denos
@@ -52,7 +51,7 @@ public class FXMLDocumentController implements Initializable {
 
             // Imprimir la información de los usuarios
             for (Song usuario : usuarios) {
-                System.out.println("ID1: " + usuario.getId() + ", Canción: " + usuario.getSongName() + ", Artista: " + usuario.getArtist());
+                System.out.println("ID: " + usuario.getId() + ", Canción: " + usuario.getSongName() + ", Artista: " + usuario.getArtist());
             }
 
             // Commit de la transacción
