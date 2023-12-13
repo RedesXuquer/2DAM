@@ -34,12 +34,17 @@ public class FXMLDocumentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         
         crudHibernate prueba = new crudHibernate();
-        SessionFactory sessionFactory = prueba.crearSession();
-        List<Song> artistas = prueba.ListarTodo(sessionFactory);
+        prueba.crearSession();
+        List<Song> artistas = prueba.ListarTodo();
         
         for (Song artista:artistas){
             System.out.println(artista.getArtist());
         }
+        
+        //prueba.crearCancion("Princesas","Pereza");
+        prueba.actualizarProducto(1, "Shape of You", "Ed Sheeran");
+        prueba.eliminarProducto(4);
+        prueba.cerrar();
     }    
     
 }
