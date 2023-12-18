@@ -42,8 +42,8 @@ public class FXMLDocumentController implements Initializable {
         }
         
         //prueba.crearCancion("Princesas","Pereza");
-        prueba.actualizarProducto(1, "Shape of You", "Ed Sheeran");
-        prueba.eliminarProducto(4);
+        //prueba.actualizarProducto(5, "Shape of You", "Luis");
+        prueba.eliminarProducto(5);
         prueba.cerrar();
     }    
     

@@ -25,7 +25,7 @@ public class crudHibernate {
         configuration.configure("hibernate.cfg.xml");
         configuration.addAnnotatedClass(Song.class);
         this.sessionFactory = configuration.buildSessionFactory();
-        //return sessionFactory; 
+        //return sessionFactory;
     }
     
     public List<Song> ListarTodo(){    
