@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CRUDMongoDB.jnlp">
+  <information>
+    <title>CRUDMongoDB</title>
+    <vendor>denos</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CRUDMongoDB.jar" size="5452" download="eager" />
+    <jar href="lib\mongo-java-driver-3.9.1.jar" size="2065743" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="crudmongodb.CRUDMongoDB"  name="CRUDMongoDB" />
+  <update check="always"/>
+</jnlp>
