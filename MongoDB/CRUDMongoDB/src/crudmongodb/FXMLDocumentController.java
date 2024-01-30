@@ -33,11 +33,11 @@ public class FXMLDocumentController implements Initializable {
         
         CRUD crud = new CRUD();
         
-        crud.create();
-        crud.read();
-        crud.update("prueba", "cancion", "age", 38, 39);
-        crud.read();
-        crud.delete("prueba", "cancion", "name", "Luis");
+        //crud.create();
+        //crud.read();
+        //crud.update("prueba", "cancion", "name", "Adiós", "Jesucristo");
+        //crud.read();
+        //crud.delete("prueba", "cancion", "name", "Jesucristo");
         
     }
     

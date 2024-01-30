@@ -59,9 +59,10 @@ public class CRUD {
             MongoCollection<Document> collection = database.getCollection("cancion");
 
             // Crea un nuevo documento a ser insertado
-            Document document = new Document("name", "Luis")
-                    .append("age", 38)
-                    .append("city", "Alzira");
+            Document document = new Document("name", "Adiós")
+                    .append("age", 33)
+                    .append("city", "Jerusalem")
+                    .append("country", "Israel");
             // Inserta el documento en la colección
             collection.insertOne(document);
 
@@ -73,7 +74,7 @@ public class CRUD {
     }
     
     public static void read(){
-              String connectionString = "mongodb://localhost:27017";
+        String connectionString = "mongodb://localhost:27017";
 
         try (MongoClient mongoClient = MongoClients.create(connectionString)) {
             // Selecciona la base de datos
@@ -92,7 +93,7 @@ public class CRUD {
                     System.out.println(document.toJson());
                 }
             }
-
+            
         } catch (Exception e) {
             System.err.println("Error de conexión o lectura: " + e.getMessage());
         }      

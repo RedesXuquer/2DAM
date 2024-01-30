@@ -17,40 +17,39 @@ import org.hibernate.cfg.Configuration;
  */
 public class crudHibernate {
     
-    SessionFactory sessionFactory;
-    
+    //SessionFactory sessionFactory;
+    Session session;
     //public void crudHibernate(){
     void crearSession(){    
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.cfg.xml");
         configuration.addAnnotatedClass(Song.class);
-        this.sessionFactory = configuration.buildSessionFactory();
+        SessionFactory sessionFactory = configuration.buildSessionFactory();
         //return sessionFactory;
+        this.session = sessionFactory.openSession();
     }
     
     public List<Song> ListarTodo(){    
-        try(Session session = this.sessionFactory.openSession()){
-            session.beginTransaction();
-            List<Song> canciones = session.createQuery("from Song", Song.class).list();
-            session.close();
+            this.session.beginTransaction();
+            List<Song> canciones = session.createQuery("from Song ", Song.class).list();
+            this.session.close();
             return canciones;
-        }
+        
     }
     
     void crearCancion(String songName, String artist) {
-        try (Session session = this.sessionFactory.openSession()) {
-            session.beginTransaction();
+        //try (Session session = this.sessionFactory.openSession()) {
+            this.session.beginTransaction();
 
             Song nuevo = new Song();
             nuevo.setSongName(songName);
             nuevo.setArtist(artist);
 
-            session.save(nuevo);
-            session.getTransaction().commit();
-            session.close();
-        }
+            this.session.save(nuevo);
+            this.session.getTransaction().commit();
+            
     }
-    
+    /*
     void actualizarProducto(int id, String songName, String artist) {
         try (Session session = this.sessionFactory.openSession()) {
             session.beginTransaction();
@@ -88,4 +87,22 @@ public class crudHibernate {
     void cerrar(){
         this.sessionFactory.close();
     }
+*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
