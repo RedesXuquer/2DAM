@@ -41,10 +41,15 @@ public class FXMLDocumentController implements Initializable {
             System.out.println(artista.getArtist());
         }
         
+        prueba.ListarTodo();
         prueba.crearCancion("Hola","Mundo");
-        //prueba.actualizarProducto(5, "Shape of You", "Luis");
-        //prueba.eliminarProducto(5);
-        //prueba.cerrar();
+        prueba.ListarTodo();
+//        prueba.actualizarProducto(5, "Shape of You", "Luis");
+//        prueba.ListarTodo();
+//        prueba.eliminarProducto(5);
+//        prueba.ListarTodo();
+//        prueba.cerrar();
+        
     }    
     
 }

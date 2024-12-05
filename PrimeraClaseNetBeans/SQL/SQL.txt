@@ -1,0 +1,42 @@
+-- Crear la base de datos
+CREATE DATABASE IF NOT EXISTS Futbol;
+
+-- Usar la base de datos
+USE Futbol;
+
+-- Crear la tabla de jugadores
+CREATE TABLE Jugadores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    equipo VARCHAR(100) NOT NULL,
+    posicion VARCHAR(50) NOT NULL,
+    anio_nacimiento YEAR NOT NULL
+);
+
+INSERT INTO Jugadores (nombre, equipo, posicion, anio_nacimiento)
+VALUES
+    ('Lionel Messi', 'Inter Miami', 'Delantero', 1987),
+    ('Cristiano Ronaldo', 'Al-Nassr', 'Delantero', 1985),
+    ('Kylian Mbappé', 'Paris Saint-Germain', 'Delantero', 1998),
+    ('Kevin De Bruyne', 'Manchester City', 'Centrocampista', 1991),
+    ('Virgil van Dijk', 'Liverpool', 'Defensa', 1991),
+    ('Thibaut Courtois', 'Real Madrid', 'Portero', 1992),
+    ('Robert Lewandowski', 'Barcelona', 'Delantero', 1988),
+    ('Erling Haaland', 'Manchester City', 'Delantero', 2000),
+    ('Luka Modric', 'Real Madrid', 'Centrocampista', 1985),
+    ('Neymar Jr', 'Al-Hilal', 'Delantero', 1992),
+    ('Marc-André ter Stegen', 'Barcelona', 'Portero', 1992),
+    ('Sergio Ramos', 'Sevilla', 'Defensa', 1986),
+    ('Trent Alexander-Arnold', 'Liverpool', 'Defensa', 1998),
+    ('Joshua Kimmich', 'Bayern Munich', 'Centrocampista', 1995),
+    ('Phil Foden', 'Manchester City', 'Centrocampista', 2000),
+    ('Vinícius Jr', 'Real Madrid', 'Delantero', 2000),
+    ('Karim Benzema', 'Al-Ittihad', 'Delantero', 1987),
+    ('Pedri', 'Barcelona', 'Centrocampista', 2002),
+    ('Jude Bellingham', 'Real Madrid', 'Centrocampista', 2003),
+    ('Harry Kane', 'Bayern Munich', 'Delantero', 1993),
+    ('Alisson Becker', 'Liverpool', 'Portero', 1992),
+    ('Achraf Hakimi', 'Paris Saint-Germain', 'Defensa', 1998),
+    ('Declan Rice', 'Arsenal', 'Centrocampista', 1999),
+    ('Rodri', 'Manchester City', 'Centrocampista', 1996),
+    ('Paulo Dybala', 'Roma', 'Delantero', 1993);
