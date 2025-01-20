@@ -47,7 +47,7 @@ public class FXMLDocumentController implements Initializable {
         PreparedStatement psInsertar = con.prepareStatement("INSERT INTO city (Name, CountryCode, District, Population) VALUES (?,?,?,?)");
         psInsertar.setString(1,"Alzira");
         psInsertar.setString(2,"ESP");
-        psInsertar.setString(3,"ESP");
+        psInsertar.setString(3,"VAL");
         psInsertar.setInt(4, 1000);
         int resultadoInsertar = psInsertar.executeUpdate();
             
